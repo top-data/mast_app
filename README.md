@@ -3,6 +3,9 @@ This repository includes all the files, models and dependencies required for run
 - Expected Input: a csv file contains pre-processed data from one herd, e.g. herd tests, reproduction tests, etc.
 - Expected output: a json file contains predicted likelihoods and cow qualities.
 
+# AI Demo Web Application
+- A basic app was built to demonstrate the AI block and is available at mast-app.azurewebsites.net.
+
 # File Description
 - app.py and templates: these files/folder along with main.py are used for a demo web app Only. I developed a basic demo app to make sure all the dependencies and the AI package working together without issue. The app is available at mast-app.azurewebsites.net
 - main.py: a few lines of code to show how to run the AI models and return the predictions.
