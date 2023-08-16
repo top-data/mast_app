@@ -7,9 +7,9 @@ This repository includes all the files, models and dependencies required for run
 - A basic app was built to demonstrate the AI block and is available at https://mast-app.azurewebsites.net/
 
 # File Description
-- app.py and templates: these files/folder along with main.py are used for a demo web app Only. I developed a basic demo app to make sure all the dependencies and the AI package working together without issue. The app is available at https://mast-app.azurewebsites.net/
+- app.py and templates: these files/folder along with main.py are used for a demo web app Only. I developed a basic demo app to make sure all the dependencies and packages working correctly in production. The app is available at https://mast-app.azurewebsites.net/
 - main.py: a few lines of code to show how to run the AI models and return the predictions.
 - ai_functions: all the functions required for running the AI block.
 - model_Outcome_...: AI models for different outcomes.
-- requirements.txt: all the dependencies and packages requires for running the models
+- requirements.txt: all the dependencies and packages required for running the models.
 - Python version: Python 3.10.9
