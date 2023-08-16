@@ -18,7 +18,7 @@ def upload_file():
             subprocess.run(['python', 'main.py', uploaded_file.filename])
             
             # Generate the path for the result file
-            result_filename = "ai_output.csv"  # Update this based on your main.py output
+            result_filename = "ai_output.csv"  
             
             # Return the result file for download
             return send_file(result_filename, as_attachment=True)
