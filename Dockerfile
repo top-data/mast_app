@@ -1,11 +1,11 @@
-FROM python:3.9.2
+FROM python:3.10.9
 
-WORKDIR python-docker
+WORKDIR mast-app
 
 COPY requirements.txt requirements.txt
 
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
+CMD [ "python", "app.py"]
