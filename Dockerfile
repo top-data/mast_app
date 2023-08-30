@@ -15,6 +15,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
+COPY . ./
 
 # Create a non-privileged user that the app will run under.
 # See https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#user
@@ -49,5 +50,5 @@ COPY . .
 EXPOSE 5000
 
 # Run the application.
-CMD python app.py
+CMD python main.py
 # CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 main:app
