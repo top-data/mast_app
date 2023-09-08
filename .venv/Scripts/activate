@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\129226\OneDrive - UTS\Mastitis\MAIN\mast_azure\mast_app\.venv"
+VIRTUAL_ENV="c:\Users\129226\OneDrive - UTS\Mastitis\codes\project\deploy\basic_app\.venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

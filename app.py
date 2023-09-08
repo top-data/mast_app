@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, send_file
 import os
 import subprocess
+from ai_functions import return_ai_output
 
 app = Flask(__name__)
 
@@ -15,10 +16,11 @@ def upload_file():
             uploaded_file.save(uploaded_file.filename)
             
             # Run the main.py script
-            subprocess.run(['python', 'main.py', uploaded_file.filename])
+            ai_output = return_ai_output(uploaded_file.filename)
             
             # Generate the path for the result file
-            result_filename = "ai_output.csv"  
+            result_filename = f"{uploaded_file.filename.rstrip('.csv')}_output.csv"  
+            ai_output.to_csv(result_filename, index=False)
             
             # Return the result file for download
             return send_file(result_filename, as_attachment=True)

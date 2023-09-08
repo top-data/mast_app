@@ -66,6 +66,7 @@ def return_ai_output(csv_file_name):
     df = pd.read_csv(csv_file_name)
     ai_output = pd.DataFrame([])
     ai_output["CowID"] = df["NID"]
+    ai_output['Lact'] = df['Lact']
     features = prep_train_test(df)
 
     for outcome in outcome_list:
