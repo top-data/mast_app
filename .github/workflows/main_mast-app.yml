@@ -64,4 +64,4 @@ jobs:
         with:
           app-name: 'mast-app'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_44BBF714E5E8445ABEC42C5C58F18842 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_008F2D83F49A402ABB2B8A1B6A9CE5DC }}
