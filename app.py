@@ -15,7 +15,7 @@ def upload_file():
             # Save the uploaded file to a temporary location
             uploaded_file.save(uploaded_file.filename)
             
-            # Run the main.py script
+            # return output file
             ai_output = return_ai_output(uploaded_file.filename)
             
             # Generate the path for the result file
