@@ -12,4 +12,4 @@ This repository includes all the files, models and dependencies required for run
 - ai_functions: all the functions required for running the AI block.
 - model_Outcome_...: AI models for different outcomes.
 - requirements.txt: all the dependencies and packages required for running the models.
-- Python version: Python 3.10.9
+- Python version: Python 3.11.6
