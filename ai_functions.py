@@ -58,7 +58,15 @@ def return_ai_output(csv_file_name):
         
         # drop quarter
         features.drop("Quarter", axis=1, inplace=True, errors='ignore')
-        
+
+        features_order = ['Lact', 'PI-M', 'DIM', 'AbCode', 'DCC', 'Ab_RxStat', 'TBred',
+                          'Lact_xLame', 'Life_xLame', 'Lact_xMetabolic', 'Life_xMetabolic',
+                          'Lact_xmast', 'Lact_qxmast', 'Life_xmast', 'LIFESCC', 'LIFE150SCC',
+                          'Pregnant', 'prelact_SCC_max', 'prelact_logSCC_mean',
+                          'prelact_SCC>1000', 'pre_herd_mast_percent',
+                          'pre_herd_fresh_mast_percent', 'pre_herd_SCC_percent_g150',
+                          'pre_herd_SCC__DIM_less31_percent_g150']
+        features = features[features_order]
         return features 
 
     outcome_list = ['Outcome_Sold', 'Outcome_Shortloss', 'Outcome_Longloss', 'Outcome_Failure', 'Outcome_Recurred']
